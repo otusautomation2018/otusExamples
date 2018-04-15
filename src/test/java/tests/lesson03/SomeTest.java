@@ -3,16 +3,15 @@ package tests.lesson03;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import tests.Driver;
+import tests.TestListener;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+@Listeners(TestListener.class)
 public class SomeTest {
     WebDriver driver;
     String baseUrl = "http://book.theautomatedtester.co.uk";

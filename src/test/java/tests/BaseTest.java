@@ -11,7 +11,7 @@ public class BaseTest {
     public WebDriver driver;
     public String baseUrl = "http://book.theautomatedtester.co.uk";
     public WebDriverWait webDriverWait;
-    int baseTimeout = 10;
+    int baseTimeout = 5;
 
     @BeforeClass
     public void start(){

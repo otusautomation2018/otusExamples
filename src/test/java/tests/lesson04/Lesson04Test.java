@@ -11,10 +11,10 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Lesson04Test extends BaseTest {
+    String uri = "/chapter1";
 
     @Test
     public void useSelectTest() {
-        String uri = "/chapter1";
         driver.get(baseUrl + uri);
 
         WebElement selectElement = driver.findElement(By.id("selecttype"));
@@ -24,17 +24,19 @@ public class Lesson04Test extends BaseTest {
 
     @Test
     public void useWaitTest() {
-        String uri = "/chapter1";
         driver.get(baseUrl + uri);
 
         String expectedText = "The following text has been loaded from another page on this site. It has been " +
                 "loaded in an asynchronous fashion so that we can work through the AJAX section of this chapter";
+
         WebElement linkAjax = driver.findElement(By.id("loadajax"));
         linkAjax.click();
+
         WebElement textAreaAjax = driver.findElement(By.cssSelector("div[id='ajaxdiv'] > p"));
 
         webDriverWait.until(
-                ExpectedConditions.textToBePresentInElementValue(textAreaAjax, expectedText));
+                ExpectedConditions.textToBePresentInElement(textAreaAjax, expectedText));
+
         assertTrue(textAreaAjax.isDisplayed());
         assertEquals(textAreaAjax.getText(), expectedText);
     }

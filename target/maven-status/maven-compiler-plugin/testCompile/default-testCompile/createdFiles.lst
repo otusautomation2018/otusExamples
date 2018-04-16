@@ -1,0 +1,5 @@
+tests/TestListener.class
+tests/lesson04/Lesson04Test.class
+tests/BaseTest.class
+tests/lesson03/SomeTest.class
+tests/Driver.class

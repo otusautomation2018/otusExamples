@@ -8,20 +8,20 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-    public WebDriver driver;
+    protected WebDriver driver;
+    protected WebDriverWait webDriverWait;
     public String baseUrl = "http://book.theautomatedtester.co.uk";
-    public WebDriverWait webDriverWait;
     int baseTimeout = 5;
 
     @BeforeClass
-    public void start(){
+    public void beforeClass(){
         driver = new Driver().getDriver("chrome");
         driver.manage().timeouts().implicitlyWait(baseTimeout, TimeUnit.SECONDS);
         webDriverWait = new WebDriverWait(driver, baseTimeout);
     }
 
     @AfterClass
-    public void quit() {
+    public void afterClass() {
         driver.quit();
     }
 }

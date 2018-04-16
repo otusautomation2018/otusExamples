@@ -40,4 +40,15 @@ public class Lesson04Test extends BaseTest {
         assertTrue(textAreaAjax.isDisplayed());
         assertEquals(textAreaAjax.getText(), expectedText);
     }
+
+    @Test
+    public void useSiblingTest(){
+        String uri = "/chapter2";
+        driver.get(baseUrl + uri);
+
+        WebElement buttonSibling = driver.findElement(By.xpath("//*[@id='but1']/following-sibling::input"));
+        buttonSibling.click();
+
+        assertTrue(buttonSibling.isDisplayed());
+    }
 }

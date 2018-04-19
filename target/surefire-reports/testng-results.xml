@@ -1,90 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-04-16T19:19:24Z" name="Surefire suite" finished-at="2018-04-16T19:19:47Z" duration-ms="23519">
+  <suite started-at="2018-04-19T11:35:18Z" name="Surefire suite" finished-at="2018-04-19T11:35:18Z" duration-ms="67">
     <groups>
-      <group name="regression">
-        <method signature="SomeTest.clickLinkTest()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" name="clickLinkTest" class="tests.lesson03.SomeTest"/>
-        <method signature="SomeTest.radiobuttonTest()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" name="radiobuttonTest" class="tests.lesson03.SomeTest"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="SomeTest.radiobuttonTest()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" name="radiobuttonTest" class="tests.lesson03.SomeTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2018-04-16T19:19:24Z" name="Surefire test" finished-at="2018-04-16T19:19:47Z" duration-ms="23519">
-      <class name="tests.lesson04.Lesson04Test">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.lesson04.Lesson04Test@19bb07ed]" started-at="2018-04-16T19:19:40Z" name="beforeClass" finished-at="2018-04-16T19:19:41Z" duration-ms="947" status="PASS">
+    <test started-at="2018-04-19T11:35:18Z" name="Surefire test" finished-at="2018-04-19T11:35:18Z" duration-ms="67">
+      <class name="tests.lesson05.Lesson05Test">
+        <test-method signature="test()[pri:0, instance:tests.lesson05.Lesson05Test@36c88a32]" started-at="2018-04-19T11:35:18Z" name="test" finished-at="2018-04-19T11:35:18Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="someTest()[pri:0, instance:tests.lesson04.Lesson04Test@19bb07ed]" started-at="2018-04-16T19:19:41Z" name="someTest" finished-at="2018-04-16T19:19:46Z" duration-ms="4944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- someTest -->
-        <test-method signature="useSelectTest()[pri:0, instance:tests.lesson04.Lesson04Test@19bb07ed]" started-at="2018-04-16T19:19:46Z" name="useSelectTest" finished-at="2018-04-16T19:19:47Z" duration-ms="805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- useSelectTest -->
-        <test-method signature="useWaitTest()[pri:0, instance:tests.lesson04.Lesson04Test@19bb07ed]" started-at="2018-04-16T19:19:47Z" name="useWaitTest" finished-at="2018-04-16T19:19:47Z" duration-ms="566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- useWaitTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.lesson04.Lesson04Test@19bb07ed]" started-at="2018-04-16T19:19:47Z" name="afterClass" finished-at="2018-04-16T19:19:47Z" duration-ms="83" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- tests.lesson04.Lesson04Test -->
-      <class name="tests.lesson03.SomeTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" started-at="2018-04-16T19:19:24Z" name="start" finished-at="2018-04-16T19:19:27Z" duration-ms="2944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method signature="clickLinkTest()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" started-at="2018-04-16T19:19:27Z" name="clickLinkTest" finished-at="2018-04-16T19:19:40Z" duration-ms="12744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickLinkTest -->
-        <test-method signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" started-at="2018-04-16T19:19:40Z" name="dataProviderTest" data-provider="lesson3_data_provider" finished-at="2018-04-16T19:19:40Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method signature="radiobuttonTest()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" started-at="2018-04-16T19:19:40Z" name="radiobuttonTest" finished-at="2018-04-16T19:19:40Z" duration-ms="340" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radiobuttonTest -->
-        <test-method signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" started-at="2018-04-16T19:19:40Z" name="dataProviderTest" data-provider="lesson3_data_provider" finished-at="2018-04-16T19:19:40Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataProviderTest -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:tests.lesson03.SomeTest@4b0b0854]" started-at="2018-04-16T19:19:40Z" name="quit" finished-at="2018-04-16T19:19:40Z" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- tests.lesson03.SomeTest -->
+        </test-method> <!-- test -->
+      </class> <!-- tests.lesson05.Lesson05Test -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

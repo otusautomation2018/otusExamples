@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-04-19T11:35:18Z" name="Surefire suite" finished-at="2018-04-19T11:35:18Z" duration-ms="67">
+  <suite started-at="2018-04-21T13:05:31Z" name="Surefire suite" finished-at="2018-04-21T13:05:31Z" duration-ms="55">
     <groups>
     </groups>
-    <test started-at="2018-04-19T11:35:18Z" name="Surefire test" finished-at="2018-04-19T11:35:18Z" duration-ms="67">
+    <test started-at="2018-04-21T13:05:31Z" name="Surefire test" finished-at="2018-04-21T13:05:31Z" duration-ms="55">
       <class name="tests.lesson05.Lesson05Test">
-        <test-method signature="test()[pri:0, instance:tests.lesson05.Lesson05Test@36c88a32]" started-at="2018-04-19T11:35:18Z" name="test" finished-at="2018-04-19T11:35:18Z" duration-ms="13" status="PASS">
+        <test-method signature="propertyTest()[pri:0, instance:tests.lesson05.Lesson05Test@ef9296d]" started-at="2018-04-21T13:05:31Z" name="propertyTest" finished-at="2018-04-21T13:05:31Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
+        </test-method> <!-- propertyTest -->
       </class> <!-- tests.lesson05.Lesson05Test -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

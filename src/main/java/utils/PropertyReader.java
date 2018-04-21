@@ -1,6 +1,5 @@
 package utils;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -14,7 +13,7 @@ public class PropertyReader {
 
         try {
 
-            input = new FileInputStream(pathToFile);
+            input = PropertyReader.class.getClassLoader().getResourceAsStream(pathToFile);
 
             // load a properties file
             prop.load(input);

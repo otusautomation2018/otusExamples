@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
+
     protected WebDriver driver;
     protected WebDriverWait webDriverWait;
     public String baseUrl = "http://book.theautomatedtester.co.uk";
@@ -23,5 +24,9 @@ public class BaseTest {
     @AfterClass
     public void afterClass() {
         driver.quit();
+    }
+
+    protected WebDriver getWebDriver() {
+        return driver;
     }
 }

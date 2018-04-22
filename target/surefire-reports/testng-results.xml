@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-04-21T18:00:13Z" name="Surefire suite" finished-at="2018-04-21T18:00:13Z" duration-ms="61">
+  <suite started-at="2018-04-22T10:09:37Z" name="Surefire suite" finished-at="2018-04-22T10:09:37Z" duration-ms="47">
     <groups>
     </groups>
-    <test started-at="2018-04-21T18:00:13Z" name="Surefire test" finished-at="2018-04-21T18:00:13Z" duration-ms="61">
+    <test started-at="2018-04-22T10:09:37Z" name="Surefire test" finished-at="2018-04-22T10:09:37Z" duration-ms="47">
       <class name="tests.lesson05.Lesson05Test">
-        <test-method signature="propertyTest()[pri:0, instance:tests.lesson05.Lesson05Test@36c88a32]" started-at="2018-04-21T18:00:13Z" name="propertyTest" finished-at="2018-04-21T18:00:13Z" duration-ms="18" status="PASS">
+        <test-method signature="useBuilderTest()[pri:0, instance:tests.lesson05.Lesson05Test@5ae50ce6]" started-at="2018-04-22T10:09:37Z" name="useBuilderTest" finished-at="2018-04-22T10:09:37Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- propertyTest -->
+        </test-method> <!-- useBuilderTest -->
       </class> <!-- tests.lesson05.Lesson05Test -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

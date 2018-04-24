@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
-import tests.Driver;
+import utils.Driver;
 import tests.TestListener;
 
 import static org.testng.Assert.assertEquals;
@@ -18,7 +18,7 @@ public class SomeTest {
 
     @BeforeClass
     public void start(){
-        driver = new Driver().getDriver("chrome");
+        driver = new Driver().getDriver();
     }
 
     @Test(groups = {"regression", "smoke"})

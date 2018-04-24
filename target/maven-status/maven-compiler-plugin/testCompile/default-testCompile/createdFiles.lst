@@ -1,6 +1,5 @@
+tests/lesson05/Lesson05Test.class
 tests/TestListener.class
 tests/lesson04/Lesson04Test.class
-tests/lesson03/SomeTest.class
-tests/Driver.class
-tests/lesson05/Lesson05Test.class
 tests/BaseTest.class
+tests/lesson03/SomeTest.class

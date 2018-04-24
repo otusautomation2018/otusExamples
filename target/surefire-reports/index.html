@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="tests.lesson05.Lesson05Test" class="method navigator-link" hash-for-method="useBuilderTest">useBuilderTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.lesson03.SomeTest" class="method navigator-link" hash-for-method="clickLinkTest">clickLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.lesson03.SomeTest" class="method navigator-link" hash-for-method="dataProviderTest(1, 2)">dataProviderTest(1, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.lesson03.SomeTest" class="method navigator-link" hash-for-method="dataProviderTest(3, 4)">dataProviderTest(3, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.lesson03.SomeTest" class="method navigator-link" hash-for-method="radiobuttonTest">radiobuttonTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -120,14 +135,37 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.lesson05.Lesson05Test</span>
+              <span class="class-name">tests.lesson03.SomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="useBuilderTest">
-                  </a> <!-- useBuilderTest -->
-                  <span class="method-name">useBuilderTest</span>
+                  <a name="clickLinkTest">
+                  </a> <!-- clickLinkTest -->
+                  <span class="method-name">clickLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataProviderTest(1, 2)">
+                  </a> <!-- dataProviderTest(1, 2) -->
+                  <span class="method-name">dataProviderTest</span>
+                  <span class="parameters">(1, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataProviderTest(3, 4)">
+                  </a> <!-- dataProviderTest(3, 4) -->
+                  <span class="method-name">dataProviderTest</span>
+                  <span class="parameters">(3, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="radiobuttonTest">
+                  </a> <!-- radiobuttonTest -->
+                  <span class="method-name">radiobuttonTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,13 +180,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
-    &lt;method-selectors&gt;
-      &lt;method-selector&gt;
-        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
-      &lt;/method-selector&gt;
-    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.lesson05.Lesson05Test&quot;/&gt;
+      &lt;class name=&quot;tests.lesson03.SomeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -172,6 +205,26 @@
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">clickLinkTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">radiobuttonTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">radiobuttonTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -188,16 +241,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'useBuilderTest')
-data.setCell(0, 2, 'tests.lesson05.Lesson05Test')
-data.setCell(0, 3, 13);
+data.setCell(0, 1, 'clickLinkTest')
+data.setCell(0, 2, 'tests.lesson03.SomeTest')
+data.setCell(0, 3, 2110);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'radiobuttonTest')
+data.setCell(1, 2, 'tests.lesson03.SomeTest')
+data.setCell(1, 3, 713);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'dataProviderTest')
+data.setCell(2, 2, 'tests.lesson03.SomeTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'dataProviderTest')
+data.setCell(3, 2, 'tests.lesson03.SomeTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -212,18 +277,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.lesson05.Lesson05Test</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">propertyTest</span>
-                <br/>
-                <span class="ignored-method-name">usePageObjectTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -232,11 +288,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.lesson05.Lesson05Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">useBuilderTest</span>
+              <div class="chronological-class-name">tests.lesson03.SomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">start</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">clickLinkTest</span>
+                <span class="method-start">7284 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dataProviderTest(1, 2)</span>
+                <span class="method-start">9403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dataProviderTest(3, 4)</span>
+                <span class="method-start">9404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">radiobuttonTest</span>
+                <span class="method-start">9404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quit</span>
+                <span class="method-start">10117 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

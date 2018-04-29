@@ -12,3 +12,6 @@ Run one test on the one class:
 ```bash
 mvn -Dtest=ClassTest#testName test
 ```
+```bash
+mvn -DpropertyName=propertyValue test
+```

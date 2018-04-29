@@ -14,7 +14,7 @@ public class Lesson05Test {
     public void propertyTest() {
         String property = PropertyReader.getPropertyFromFile("properties/settings.properties", "timeout");
         System.out.println("The property: " + property);
-        assertEquals("10", property, "ERROR: property not equal 10");
+//        assertEquals("10", property, "ERROR: property not equal 10");
     }
 
     @Test
@@ -40,5 +40,27 @@ public class Lesson05Test {
         assertEquals(person.firstName, firstName);
         assertTrue(person.isEmployed);
         assertFalse(person.isFemale);
+    }
+
+    @Test
+    public void substrTest() {
+        float fl = (float) 1208.0199;
+
+        System.out.println("==========================");
+        System.out.println("+++++++++++++++++++++++");
+        System.out.println(discardUpTo2DecimalPlaces(fl));
+        System.out.println("+++++++++++++++++++++++");
+        System.out.println("==========================");
+
+    }
+
+    public float discardUpTo2DecimalPlaces(float fl) {
+        String[] splitedStr = String.valueOf(fl).split("\\.");
+        String wholePart = splitedStr[0];
+        String fractionPart = splitedStr[1].substring(0, 2);
+        String resultStr = wholePart + "." + fractionPart;
+        float result = Float.parseFloat(resultStr);
+
+        return result;
     }
 }

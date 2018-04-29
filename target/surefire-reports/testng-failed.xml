@@ -3,13 +3,11 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.lesson04.Lesson04Test">
+      <class name="tests.lesson05.Lesson05Test">
         <methods>
-          <include name="quit"/>
-          <include name="useWaitTest"/>
-          <include name="start"/>
+          <include name="substrTest"/>
         </methods>
-      </class> <!-- tests.lesson04.Lesson04Test -->
+      </class> <!-- tests.lesson05.Lesson05Test -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

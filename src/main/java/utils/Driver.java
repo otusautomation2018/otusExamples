@@ -32,7 +32,7 @@ public class Driver {
 
     public WebDriver getDriver() {
 //        driverName = System.getProperty("webDriver");
-        driverName = PropertyReader.getPropertyFromFile("properties/settings.properties", "webDriver");
+//        driverName = PropertyReader.getPropertyFromFile("properties/settings.properties", "webDriver");
         if (driverName == null) driverName = "chrome";
         switch (driverName){
             case "chrome": return createChromeDriver();

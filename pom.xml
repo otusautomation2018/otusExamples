@@ -29,9 +29,9 @@
                 <version>2.21.0</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <webdriver.chrome.driver>/Library/Webdriver/chromedriver/chromedriver</webdriver.chrome.driver>
-                        <webdriver.gecko.driver>/Library/Webdriver/gecko/geckodriver</webdriver.gecko.driver>
-                        <webdriver.opera.driver>/Library/Webdriver/opera/operadriver</webdriver.opera.driver>
+                        <webdriver.chrome.driver>C:\Program Files\drivers\chromedriver.exe</webdriver.chrome.driver>
+                        <webdriver.gecko.driver>C:\Program Files\drivers\geckodriver.exe</webdriver.gecko.driver>
+                        <webdriver.opera.driver>C:\Program Files\drivers\operadriver.exe</webdriver.opera.driver>
                         <webdriver.safari.driver>/usr/bin/safaridriver</webdriver.safari.driver>
                     </systemPropertyVariables>
                 </configuration>

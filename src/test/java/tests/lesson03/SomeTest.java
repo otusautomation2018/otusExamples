@@ -18,7 +18,7 @@ public class SomeTest {
 
     @BeforeClass
     public void start(){
-        driver = new Driver().getDriver();
+        driver = Driver.getInstance();
     }
 
     @Test(groups = {"regression", "smoke"})

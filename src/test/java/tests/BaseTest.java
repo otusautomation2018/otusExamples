@@ -12,12 +12,11 @@ public class BaseTest {
 
     protected WebDriver driver;
     protected WebDriverWait webDriverWait;
-    public String baseUrl = "http://book.theautomatedtester.co.uk";
     int baseTimeout = 5;
 
     @BeforeClass
     public void beforeClass(){
-        driver = new Driver().getDriver();
+        driver = Driver.getInstance();
         driver.manage().timeouts().implicitlyWait(baseTimeout, TimeUnit.SECONDS);
         webDriverWait = new WebDriverWait(driver, baseTimeout);
     }

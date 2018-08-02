@@ -11,6 +11,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Lesson04Test extends BaseTest {
+    String baseUrl = "http://book.theautomatedtester.co.uk";
     String uri = "/chapter1";
 
     @Test

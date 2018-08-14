@@ -41,4 +41,5 @@ public class Lesson05Test {
         assertTrue(person.isEmployed);
         assertFalse(person.isFemale);
     }
+    // test
 }
